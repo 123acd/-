@@ -1,0 +1,658 @@
+{
+  "run": {
+    "meta": {
+      "生成于": "2023/6/4下午3:20:51",
+      "主机": "LAPTOP-UIJJUUOJ",
+      "平台": "Windows 10.0.22000",
+      "用户名": "guagua",
+      "CPU": "x64, 16 core, AMD Ryzen 7 6800H with Radeon Graphics         ",
+      "CukeTest版本": "1.7.11.1 (Cucumber 5.x)"
+    }
+  }
+}{
+  "feature": {
+    "uri": "feature1.feature",
+    "description": "登录注册admin账户，并输入汽车类型，动态，用户信息等数据，更改后查看主页echars图的变化，并与在线用户zhang进行聊天",
+    "keyword": "功能",
+    "name": "<二手汽车后台数据自动录入并检验相关功能>",
+    "line": 2,
+    "id": "<二手汽车后台数据自动录入并检验相关功能>",
+    "tags": []
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;注册admin账户",
+    "keyword": "场景",
+    "line": 5,
+    "name": "注册admin账户",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 4283,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 6,
+        "name": "浏览到注册网页 \"http://localhost:9876/register\"",
+        "match": {
+          "location": "definitions.js:38"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 2442000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 7,
+        "name": "输入用户名\"admin\"，密码\"admin\"，确认密码\"admin\"，回到登录页面",
+        "match": {
+          "location": "definitions.js:54"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 1713000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 128000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/1.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;进入二手汽车后台数据管理系统",
+    "keyword": "场景",
+    "line": 9,
+    "name": "进入二手汽车后台数据管理系统",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 1753,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 10,
+        "name": "浏览到登录页面 \"http://localhost:9876/\"",
+        "match": {
+          "location": "definitions.js:84"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 213000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 11,
+        "name": "输入用户名\"admin\"，密码\"admin\"，验证码\"0000\"，登录账号导航到主页",
+        "match": {
+          "location": "definitions.js:90"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 1396000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 144000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/2.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;新增汽车类型相关信息",
+    "keyword": "场景",
+    "line": 13,
+    "name": "新增汽车类型相关信息",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 3896,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 14,
+        "name": "浏览汽车类型 \"http://localhost:9876/\"",
+        "match": {
+          "location": "definitions.js:114"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 316000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 15,
+        "name": "点击\"新增\"按钮，输入品牌\"特斯拉\"，价格\"400000\"，点击\"确定\"按钮，点击\"新增\"按钮，输入品牌\"特斯拉\"，价格\"500000\"，点击\"确定\"按钮",
+        "match": {
+          "location": "definitions.js:123"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 3390000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 190000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/3.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;模糊查询汽车类型相关信息",
+    "keyword": "场景",
+    "line": 17,
+    "name": "模糊查询汽车类型相关信息",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 1585,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 18,
+        "name": "输入\"特斯\"模糊查询特斯拉车型",
+        "match": {
+          "location": "definitions.js:167"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 437000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 19,
+        "name": "验证是否查询成功",
+        "match": {
+          "location": "definitions.js:178"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 1041000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 107000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/4.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;批量删除汽车类型相关信息",
+    "keyword": "场景",
+    "line": 21,
+    "name": "批量删除汽车类型相关信息",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 1081,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 22,
+        "name": "删除\"特斯拉\"车型",
+        "match": {
+          "location": "definitions.js:184"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 740000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 23,
+        "name": "验证是否删除成功",
+        "match": {
+          "location": "definitions.js:197"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 247000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 94000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/5.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;编辑修改汽车类型相关信息",
+    "keyword": "场景",
+    "line": 25,
+    "name": "编辑修改汽车类型相关信息",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 3766,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 26,
+        "name": "点击\"编辑\"按钮修改\"奔驰\"价格\"500000\",再修改回\"540000\"",
+        "match": {
+          "location": "definitions.js:203"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 3439000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 27,
+        "name": "验证是否修改成功",
+        "match": {
+          "location": "definitions.js:244"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 206000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 121000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/6.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;新增动态相关",
+    "keyword": "场景",
+    "line": 29,
+    "name": "新增动态相关",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 2015,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 30,
+        "name": "跳转到动态网站 \"http://localhost:9876/news\"",
+        "match": {
+          "location": "definitions.js:250"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 412000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 31,
+        "name": "点击\"新增\"按钮，输入标题\"今天喜提宝马，开着很爽\"，点击\"确定\"按钮",
+        "match": {
+          "location": "definitions.js:258"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 1479000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 124000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/7.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;新增用户相关信息",
+    "keyword": "场景",
+    "line": 33,
+    "name": "新增用户相关信息",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 5815,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 34,
+        "name": "浏览到网地址 \"http://localhost:9876/user\"",
+        "match": {
+          "location": "definitions.js:276"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 438000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 35,
+        "name": "点击\"新增\"按钮，输入用户名\"11\"，昵称\"11\"，年龄\"11\"，性别选择\"男\"，地址\"三峡大学\"，点击\"确定\"按钮，点击\"新增\"按钮，输入用户名\"22\"，昵称\"22\"，年龄\"22\"，性别选择\"女\"，地址\"三峡大学\"，点击\"确定\"按钮",
+        "match": {
+          "location": "definitions.js:285"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 5269000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 108000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/8.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;到主页查看echars图在修改用户数量后的地域比例改变",
+    "keyword": "场景",
+    "line": 37,
+    "name": "到主页查看echars图在修改用户数量后的地域比例改变",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 1922,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 38,
+        "name": "跳到搜索网站 \"http://localhost:9876/home\"",
+        "match": {
+          "location": "definitions.js:355"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 537000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 39,
+        "name": "查看echars图是否发生改变",
+        "match": {
+          "location": "definitions.js:364"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 1290000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 95000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/9.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;登录普通用户\"zhang\"",
+    "keyword": "场景",
+    "line": 41,
+    "name": "登录普通用户\"zhang\"",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 2817,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 42,
+        "name": "跳到登录网页 \"http://localhost:9876/\"",
+        "match": {
+          "location": "definitions.js:372"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 209000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 43,
+        "name": "输入用户名\"zhang\"，密码\"123\"，验证码\"0000\"，导航到主页",
+        "match": {
+          "location": "definitions.js:383"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 2501000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 107000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/10.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<二手汽车后台数据自动录入并检验相关功能>;与\"admin\"发起在线聊天并在聊天结束后关闭页面",
+    "keyword": "场景",
+    "line": 45,
+    "name": "与\"admin\"发起在线聊天并在聊天结束后关闭页面",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 30702,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 46,
+        "name": "跳转到 \"http://localhost:9876/im\"，点击\"气泡\"与\"admin\"发起聊天，admin发送信息\"你好有什么需要帮助的吗\"，输入\"请问可以跟我说一下平台支付步骤吗？\"，并点击\"发送\"按钮，关闭页面",
+        "match": {
+          "location": "definitions.js:417"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 8931000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "definitions.js:29"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 21771000000
+        },
+        "embeddings": [
+          {
+            "data": "file://WebTest__report/11.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}
